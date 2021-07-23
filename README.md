@@ -12,8 +12,9 @@ I want to use this web app dashboard from friends, family and myself to examine 
 # Results
 * https://amanda-covid-web-app.herokuapp.com/
 
-
 <img width="1431" alt="Untitled 5" src="https://user-images.githubusercontent.com/33467922/126781615-689c8a97-5bac-4802-ad9e-4d460529efae.png">
+<img width="1385" alt="Untitled 6" src="https://user-images.githubusercontent.com/33467922/126782607-a8d657d7-cf10-4311-99a1-15cce5dcc287.png">
+<img width="1411" alt="Untitled 99" src="https://user-images.githubusercontent.com/33467922/126782769-e69db245-36f7-4c66-982b-c1e825e42669.png">
 
 # Acknowledgements
 * https://apidocs.covidactnow.org/
