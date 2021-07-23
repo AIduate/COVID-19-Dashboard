@@ -50,5 +50,6 @@ from decouple import config
 * index.html: contains html and javascript to render web page and plot graphs from plotly json
 * routes.py: use flask to render template and send in python variables for javascript access
 * wrangle_data.py: request latest date covidactnow api data with key and render plotly choropleth maps for vaccination rate, new cases and cumulative cases
-
+* requirements.txt: required by Heroku with liabries required to be pip installed for app to run
+* runtime.txt: python version for Heroku environment to use
 
