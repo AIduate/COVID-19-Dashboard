@@ -47,7 +47,7 @@ def cleandata(key_path):
     return df
 
 def return_figures():
-    """Creates four plotly visualizations
+    """Creates 3 plotly visualizations
 
     Args:
         None
