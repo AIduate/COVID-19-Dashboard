@@ -1,7 +1,6 @@
 # COVID-19-Dashboard
 
-My intentions are to use the visuals created by plotly using the covidactnow api to a dashboard hosted on Heroku for my family, friends and I to use.
-I want to see if areas where outbreaks are still happening have low vaccination rates as well as see if areas that were affected the most cumulatively now have higher vaccination rates than others.
+I want to use this web app dashboard from friends, family and myself to examine if areas where outbreaks are still happening have low vaccination rates as well as see if areas that were affected the most cumulatively now have higher vaccination rates than others.
 
 ## Table of contents
 * [Results](#results)
@@ -9,16 +8,15 @@ I want to see if areas where outbreaks are still happening have low vaccination 
 * [Technologies](#technologies)
 * [Libraries](#libraries)
 * [Files](#files)
-* [TODO](#todo)
-
 
 # Results
-<img width="1431" alt="Untitled 2" src="https://user-images.githubusercontent.com/33467922/126736374-d59b1170-2fe3-430d-b852-d5d99dbe5a91.png">
-<img width="1373" alt="Untitled 3" src="https://user-images.githubusercontent.com/33467922/126736433-2b7a5e75-3bab-4a4e-baab-a71a7a2be37e.png">
-<img width="1386" alt="Untitled 4" src="https://user-images.githubusercontent.com/33467922/126736481-eb1baf56-57bd-402e-a80d-83d807a6acfd.png">
+https://amanda-covid-web-app.herokuapp.com/
+<img width="1431" alt="Untitled 5" src="https://user-images.githubusercontent.com/33467922/126781615-689c8a97-5bac-4802-ad9e-4d460529efae.png">
 
 # Acknowledgements
 https://apidocs.covidactnow.org/
+https://plotly.com/python/choropleth-maps/
+https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5
 
 # Technologies
 * Python 3.6
@@ -35,6 +33,7 @@ from urllib.request import urlopen
 import json
 import plotly.express as px
 from flask import render_template
+from decouple import config
 ```
 
 ```
@@ -50,11 +49,4 @@ from flask import render_template
 * routes.py: use flask to render template and send in python variables for javascript access
 * wrangle_data.py: request latest date covidactnow api data with key and render plotly choropleth maps for vaccination rate, new cases and cumulative cases
 
-# TODO
-* Fix left margin of header and subheader
-* Test making the graphs fluid
-* Remove the the line app.run(host='0.0.0.0', port=3001, debug=True) in the myapp.py file before deploying to Heroku
-* Create requirements txt file with all python libraries that Heroku will need
-* Make sure the Procfile contains the line web gunicorn myapp:app
-* Create private GIT to host app (because of api key) and deploy to Heroku
 
