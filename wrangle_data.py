@@ -4,9 +4,9 @@ import requests
 from urllib.request import urlopen
 import json
 import plotly.express as px
-#import plotly.graph_objs as go
+from decouple import config
 
-def cleandata(key_path):
+def cleandata(key):
     """call and clean covidactnow api results
 
     Args:
@@ -18,8 +18,8 @@ def cleandata(key_path):
     """    
     
     #retrieve saved key provided by https://apidocs.covidactnow.org/ 
-    with open(key_path) as file:
-        key = file.read()
+    #with open(key_path) as file:
+    #    key = file.read()
 
     Call_URL = 'https://api.covidactnow.org/v2/counties.json?apiKey=' + key
 
@@ -56,7 +56,7 @@ def return_figures():
         list (dict): list containing the 3 plotly visualizations
 
     """
-    df = cleandata('data/config.txt')
+    df = cleandata(config('KEY'))
     
     with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
         counties = json.load(response)
@@ -100,7 +100,7 @@ def return_figures():
     
 def return_lastupdated():
     
-        """Pulls last updated date from api
+     """Pulls last updated date from api
 
     Args:
         None
@@ -110,6 +110,6 @@ def return_lastupdated():
 
     """
     
-    df = cleandata('data/config.txt')
+    df = cleandata(config('KEY'))
     lastupdated = max(df['last_updated_date'])
     return lastupdated
