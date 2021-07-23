@@ -10,13 +10,15 @@ I want to use this web app dashboard from friends, family and myself to examine 
 * [Files](#files)
 
 # Results
-https://amanda-covid-web-app.herokuapp.com/
+* https://amanda-covid-web-app.herokuapp.com/
+
+
 <img width="1431" alt="Untitled 5" src="https://user-images.githubusercontent.com/33467922/126781615-689c8a97-5bac-4802-ad9e-4d460529efae.png">
 
 # Acknowledgements
-https://apidocs.covidactnow.org/
-https://plotly.com/python/choropleth-maps/
-https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5
+* https://apidocs.covidactnow.org/
+* https://plotly.com/python/choropleth-maps/
+* https://able.bio/rhett/how-to-set-and-get-environment-variables-in-python--274rgt5
 
 # Technologies
 * Python 3.6
